@@ -2,6 +2,7 @@
     <string name="app_name">Kitty Motivation</string>
     <string name="string_hello">Olá</string>
     <string name="string_phrase">Motivation</string>
+    <string name="string_author">Ator</string>
     <string name="button_home">Nova Frase</string>
     <string name="string_user">Vamos começar?</string>
     <string name="button_save">SALVAR</string>

@@ -6,11 +6,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface RetrofitInitializer {
-    @GET("quotes/random")
+    @GET("Quotes/random")
     fun getPhrase() : Call<Phrase>
 
     companion object {
-        var url = "https://programming-quotes-api.herokuapp.com/index.html"
+        var url = "https://programming-quotes-api.herokuapp.com/"
 
         fun create() : RetrofitInitializer {
             val retrofit = Retrofit.Builder()

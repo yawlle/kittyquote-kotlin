@@ -2,7 +2,9 @@ package com.yawlle.kittymotivation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.yawlle.kittymotivation.R
 import com.yawlle.kittymotivation.databinding.ActivityMainBinding
@@ -47,19 +49,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun handleNextPhrase() {
-//        binding.phrase.text = #TODO
+        requirePhrase()
     }
 
-//    private fun requirePhrase() {
-//        val retrofitInitializer =  RetrofitInitializer.create().getPhrase()
-//        retrofitInitializer.enqueue(object : Callback<> {
-//            override fun onResponse(call: Call<Phrase>?, response: Response<Phrase>?){
-//                if(response?.body() != null) {
-//                    val phrase = response?.body()?.en?.children
-//                }
-//            }
-//        }
-//    }
+    private fun requirePhrase() {
+        val retrofitInitializer =  RetrofitInitializer.create().getPhrase()
+        retrofitInitializer.enqueue(object : retrofit2.Callback<Phrase> {
+            override fun onResponse(call: Call<Phrase>, response: Response<Phrase>) {
+                    binding.textViewPhrase.text = response.body().toString()
+
+            }
+
+            override fun onFailure(call: Call<Phrase>, t: Throwable) {
+                Toast.makeText(this@MainActivity,t.message,Toast.LENGTH_SHORT).show()
+            }
+
+        })
+    }
 
     private fun handleUserName() {
         val name = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)

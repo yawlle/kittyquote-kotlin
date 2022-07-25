@@ -55,7 +55,7 @@
         android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/phrase"
+        android:id="@+id/textView_phrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -63,7 +63,6 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/string_phrase"
-
         android:textColor="@color/black"
         android:textSize="22dp" />
 

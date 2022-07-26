@@ -3,16 +3,14 @@ package com.yawlle.kittymotivation.infra
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class Phrase(
+data class PhraseCode (
     @Expose
-    @SerializedName("author")
-    val author: String,
-    @Expose
-    @SerializedName("en")
-    val en: String
+    @SerializedName("quote")
+    val quote: String,
 )
+
 {
     override fun toString(): String {
-            return en + " \n " + author
-        }
+        return quote + "  "
     }
+}

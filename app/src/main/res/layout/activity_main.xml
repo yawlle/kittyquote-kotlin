@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.MainActivity"
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -16,28 +17,79 @@
         android:paddingStart="8dp"
         android:paddingTop="16dp"
         android:paddingEnd="8dp"
-        android:paddingBottom="16dp">
+        android:paddingBottom="16dp"
+        android:baselineAligned="false">
 
-        <ImageView
-            android:id="@+id/image_all"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_all_incluse" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            >
 
-        <ImageView
-            android:id="@+id/image_happy"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_happy" />
+            <ImageView
+                android:id="@+id/image_computer"
+                android:layout_centerHorizontal="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_computer" />
 
-        <ImageView
-            android:id="@+id/image_sunny"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_computer"
+                android:text="@string/programming"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_happy"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_happy"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_happy"
+                android:text="@string/anime"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_sunny" />
+            >
+
+            <ImageView
+                android:id="@+id/image_sunny"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_sunny"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_sunny"
+                android:layout_centerHorizontal="true"
+                android:text="@string/code" />
+
+        </RelativeLayout>
+
+
+
 
 
     </LinearLayout>
@@ -52,7 +104,7 @@
         android:fontFamily="@font/cambay"
         android:text="@string/string_hello"
         android:textColor="@color/black"
-        android:textSize="18dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView_phrase"
@@ -64,15 +116,11 @@
         android:padding="16dp"
         android:text="@string/string_phrase"
         android:textColor="@color/black"
-        android:textSize="22dp" />
+        android:textSize="22sp"
+        android:scrollbars = "vertical"
+        android:maxLines = "10"
+        />
 
-    <View
-        android:layout_width="130dp"
-        android:layout_height="3dp"
-        android:layout_below="@+id/hello"
-        android:layout_centerHorizontal="true"
-        android:background="@color/main_color"
-        android:elevation="5dp" />
 
     <Button
         android:id="@+id/button_new_phrase"
@@ -80,6 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/bold_color"
         android:fontFamily="@font/cambay"

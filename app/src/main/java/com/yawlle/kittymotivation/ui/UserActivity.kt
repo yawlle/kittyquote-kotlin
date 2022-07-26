@@ -25,7 +25,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.hide()
 
         //Verifica se o usuário já digitou o nome
-        verifyUserName()
+//        verifyUserName()
 
     }
 

@@ -6,8 +6,8 @@ class MotivationConstants private constructor() {
     }
 
     object FILTER {
-        const val ALL = 1
-        const val SUNNY = 2
-        const val HAPPY = 3
+        const val COMPUTER = 1
+        const val ANIME = 2
+        const val CODE = 3
     }
 }

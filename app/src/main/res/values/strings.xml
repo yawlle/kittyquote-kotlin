@@ -1,11 +1,16 @@
 <resources>
-    <string name="app_name">Kitty Motivation</string>
-    <string name="string_hello">Olá</string>
-    <string name="string_phrase">Motivation</string>
+    <string name="app_name">Kitty Quotes</string>
+    <string name="string_hello">Hi</string>
+    <string name="string_phrase"> </string>
     <string name="string_author">Ator</string>
-    <string name="button_home">Nova Frase</string>
-    <string name="string_user">Vamos começar?</string>
-    <string name="button_save">SALVAR</string>
-    <string name="validation_mandatory_name">Informe seu nome! :x </string>
-    <string name="about_you">Qual o seu nome?</string>
+    <string name="button_home">NEW QUOTE</string>
+    <string name="string_user">Learn cool quotes!</string>
+    <string name="button_save">SAVE</string>
+    <string name="validation_mandatory_name">Pls, tell me your name! </string>
+    <string name="about_you">Tell me your name.</string>
+    <string name="programming">Programming</string>
+    <string name="code">Code</string>
+    <string name="anime">Anime</string>
+    <string name="kitty_quotes">Kitty Quotes</string>
+    <string name="kitty_studying">Kitty Studying</string>
 </resources>

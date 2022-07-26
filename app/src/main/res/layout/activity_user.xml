@@ -17,13 +17,14 @@
         android:gravity="center"
         android:text="@string/string_user"
         android:textColor="@color/white"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/begin_view"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo_main"
+        android:contentDescription="@string/kitty_quotes"/>
 
     <EditText
         android:id="@+id/edit_user"
@@ -32,15 +33,16 @@
         android:layout_centerInParent="true"
         android:layout_margin="20dp"
         android:hint="@string/about_you"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white" />
 
     <ImageView
         android:id="@+id/png_kitty"
-        android:layout_width="200dp"
+        android:layout_width="500dp"
         android:layout_height="200dp"
         android:layout_below="@+id/edit_user"
-        android:src="@drawable/kitty"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:src="@drawable/kitty_main_menu"
+        android:contentDescription="@string/kitty_studying" />
 
     <Button
         android:id="@+id/button_save"
@@ -49,6 +51,7 @@
         android:layout_below="@id/png_kitty"
         android:backgroundTint="@color/bold_color"
         android:text="@string/button_save"
+        android:paddingTop="10dp"
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"
         android:paddingHorizontal="30dp"

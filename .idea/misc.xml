@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/DOCUMENTOS/AndroidProjects2/KittyMotivation/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/DOCUMENTOS/AndroidProjects2/KittyMotivation/app/src/main/res/layout/activity_user.xml" value="0.1" />
+        <entry key="..\:/DOCUMENTOS/AndroidProjects2/KittyMotivation/app/src/main/res/drawable/ic_launcher_kitty_background.xml" value="0.1835" />
+        <entry key="..\:/DOCUMENTOS/AndroidProjects2/KittyMotivation/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/DOCUMENTOS/AndroidProjects2/KittyMotivation/app/src/main/res/layout/activity_user.xml" value="0.264" />
       </map>
     </option>
   </component>

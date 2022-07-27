@@ -1,5 +1,5 @@
 
-# kittquote_kotlin
+# kittyquote_kotlin
 
 Aplicação que mostra uma frase random das categorias Programação, Anime e Code.
 
@@ -23,8 +23,8 @@ Obs:
 
 <h3>Screenshots</h3>
   
-  ![Alt text](https://github.com/yawlle/kittyquote-kotlin/blob/main/screenshot/Screenshot_1658860963.png?raw=true "Screenshot 1")
+  ![Alt text](https://github.com/yawlle/kittyquote-kotlin/blob/main/screenshot/menu.png?raw=true "Screenshot 1")
   
-  ![Alt text](https://user-images.githubusercontent.com/75861637/175790700-c8da81f9-a076-4b23-bdb5-98147c88039d.png "Screenshot 2")
+  ![Alt text](https://github.com/yawlle/kittyquote-kotlin/blob/main/screenshot/main.png?raw=true "Screenshot 2")
   
  

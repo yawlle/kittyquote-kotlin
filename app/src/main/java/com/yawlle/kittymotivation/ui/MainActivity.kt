@@ -131,14 +131,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.image_computer -> {
                 binding.imageComputer.setColorFilter(ContextCompat.getColor(this, R.color.white))
                 categoryId = MotivationConstants.FILTER.COMPUTER
+                handleNextPhrase(categoryId)
+                binding.linearMain.setBackgroundColor(ContextCompat.getColor(this,R.color.programming_background_color))
             }
             R.id.image_happy -> {
                 binding.imageHappy.setColorFilter(ContextCompat.getColor(this, R.color.white))
                 categoryId = MotivationConstants.FILTER.ANIME
+                handleNextPhrase(categoryId)
+                binding.linearMain.setBackgroundColor(ContextCompat.getColor(this,R.color.anime_background_color))
             }
             R.id.image_sunny -> {
                 binding.imageSunny.setColorFilter(ContextCompat.getColor(this, R.color.white))
                 categoryId = MotivationConstants.FILTER.CODE
+                handleNextPhrase(categoryId)
+                binding.linearMain.setBackgroundColor(ContextCompat.getColor(this,R.color.code_background_color))
             }
         }
 

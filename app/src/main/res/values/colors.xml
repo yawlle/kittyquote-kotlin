@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_color">#E683B6</color>
     <color name="bold_color">#945476</color>
+    <color name="programming_background_color">#D6D5D5</color>
+    <color name="anime_background_color">#FAF8E19C</color>
+    <color name="code_background_color">#F2D2F8</color>
 </resources>
